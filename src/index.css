@@ -21,7 +21,7 @@ button {
 .App{
   display: flex;
   min-height: 100vh;
-  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center; 
   background: 
@@ -29,11 +29,13 @@ button {
   linear-gradient( -45deg, #4f1114, transparent),
   linear-gradient( 45deg, #1f0973, transparent), center center / cover no-repeat;
 	background-blend-mode: difference; 
-
+  overflow-x: hidden!important;
 }
 
 .App .container{
   margin:0 auto;
+  max-width: 1350px;
+  width: 100%;
 
 }
 
@@ -95,7 +97,8 @@ button {
   text-align: center;
   min-height: 600px;
   height: 100%;
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
   border: 3px solid rgba(255, 255, 255, 1);
   background-color: rgb(1, 1, 20);
   border-radius: 0px 10%; 
@@ -143,6 +146,7 @@ button {
   }
   .App .container .quiz{
     max-width: 450px;
+    width: 100%;
     margin:0 auto;
   }
   
